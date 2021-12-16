@@ -4,6 +4,10 @@ class LibtreeDirect < Formula
   version "3.0.1"
   license "MIT"
 
+  on_macos do
+    odie "Not available on MacOS. See #{homepage} for more information."
+  end
+
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/haampie/libtree/releases/download/v3.0.1/libtree_x86_64"
