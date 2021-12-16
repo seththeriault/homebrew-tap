@@ -10,6 +10,8 @@ class YtDlpDirect< Formula
     bin.install "yt-dlp"
   end
 
+  conflicts_with "yt-dlp", because: "you should try the version in homebrew-core first"
+
   test do
     # commit history of homebrew-core repo
     system "#{bin}/yt-dlp", "--simulate", "https://www.youtube.com/watch?v=pOtd1cbOP7k"
