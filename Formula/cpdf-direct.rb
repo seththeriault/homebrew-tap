@@ -4,6 +4,7 @@ class CpdfDirect < Formula
   version "2.4"
 
   on_macos do
+    conflicts_with "cpdf", because: "you should try the version in oncletom/brew first"
     if Hardware::CPU.intel?
       url "https://github.com/coherentgraphics/cpdf-binaries/raw/master/OSX-Intel/cpdf"
       sha256 "8ddd3aac989cca5bdf9734dea233ba026a029d82b0e4fa745c7115de3519ffd8"
@@ -16,8 +17,6 @@ class CpdfDirect < Formula
       sha256 "bf81ab62e0067b0c33ee22bec3579aa678760f31131b98fe3c22d4ccffc6bf5c"
     end
   end
-
-  conflicts_with "cpdf", because: "you should try the version in oncletom/brew first"
 
   def install
     bin.install "cpdf"
