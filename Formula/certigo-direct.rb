@@ -1,13 +1,13 @@
 class CertigoDirect < Formula
   desc "Utility to examine and validate certificates in a variety of formats"
   homepage "https://github.com/square/certigo"
-  version "1.13.0"
+  version "1.14.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/square/certigo/releases/download/v1.13.0/certigo-darwin-amd64"
-      sha256 "8848bf013a860a573ec969757aac22297e8b65ebe1019f618432df705689815c"
+	    url "https://github.com/square/certigo/releases/download/v1.14.1/certigo-darwin-amd64"
+      sha256 "76c0acaf463397e4f03b5d47795788c2149d7edff8073f3b1fd06205908459ec"
 
       def install
         bin.install "certigo-darwin-amd64" => "certigo"
@@ -18,8 +18,8 @@ class CertigoDirect < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/square/certigo/releases/download/v1.13.0/certigo-linux-amd64"
-      sha256 "15038b07c9ac817c2ccc4f593eb7ac23efad4f65c255218a67b81ac587777cd2"
+      url "https://github.com/square/certigo/releases/download/v1.14.1/certigo-linux-amd64"
+      sha256 "c44f32051476c615d74be834485dd8cce0a7e9cf8f96ad35c826548213b52563"
 
       def install
         bin.install "certigo-linux-amd64" => "certigo"
