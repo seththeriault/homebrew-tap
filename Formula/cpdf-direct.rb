@@ -1,20 +1,20 @@
 class CpdfDirect < Formula
   desc "Coherent PDF CLI tools binaries"
   homepage "https://github.com/coherentgraphics/cpdf-binaries"
-  version "2.4"
+  version "2.5"
 
   on_macos do
     conflicts_with "cpdf", because: "you should try the version in oncletom/brew first"
     if Hardware::CPU.intel?
       url "https://github.com/coherentgraphics/cpdf-binaries/raw/master/OSX-Intel/cpdf"
-      sha256 "8ddd3aac989cca5bdf9734dea233ba026a029d82b0e4fa745c7115de3519ffd8"
+      sha256 "3cdb2c5ddd0127c6a1906a753a639c6d950e93b41e81fceb2cc6473177ab2257"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://raw.githubusercontent.com/coherentgraphics/cpdf-binaries/master/Linux-Intel-64bit/cpdf"
-      sha256 "bf81ab62e0067b0c33ee22bec3579aa678760f31131b98fe3c22d4ccffc6bf5c"
+      sha256 "11d06458df9b0ca86770017d7569d4c42337d22558add0787312a417f9aa9ae2"
     end
   end
 
