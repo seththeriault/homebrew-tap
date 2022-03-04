@@ -6,7 +6,7 @@ class DsqDirect < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/multiprocessio/dsq/releases/download/0.5.0/dsq-darwin-x64-0.5.0.zip"
-      sha256 "72ad77bd07eb4b14d2afefe521e552f1fab593dd8de89f342a0c19ca7fffb86f"
+      sha256 "972bda671888088c6ab7e173ad169a170d6578f2eeb278c15f941541dbde88ab"
     end
   end
 
