@@ -5,16 +5,13 @@ class JlessDirect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.7.2/jless-v0.7.2-x86_64-apple-darwin.zip"
-      sha256 "4f5d15bbf2764281dd086949d6472a3f297564f800e95940c03a1efdc610887f"
+      url "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.8.0/jless-v0.8.0-x86_64-apple-darwin.zip"
+      sha256 "5fdd41584c8c08e811d32b80d5998740fc5235484dd0ce84ad989965f0833968"
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/PaulJuliusMartinez/jless/releases/download/v0.7.2/jless-v0.7.2-x86_64-unknown-linux-gnu.zip"
-      sha256 "7f24a80f2c5ec928ea285acb0343c475489b33e210579e5eeaf29bd2403f84a7"
-    end
+    odie "Use homebrew-core formula instead."
   end
 
   conflicts_with "jless", because: "you should try the version in homebrew-core first"
