@@ -6,7 +6,7 @@ class CertigoDirect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-	    url "https://github.com/square/certigo/releases/download/v1.15.1/certigo-darwin-amd64
+      url "https://github.com/square/certigo/releases/download/v1.15.1/certigo-darwin-amd64"
       sha256 "2c13943e4f059e1f542a07da8a4aca785f211bf32a19bf48abf06c0d7044cdb3"
 
       def install
