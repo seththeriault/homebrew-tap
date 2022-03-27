@@ -5,13 +5,13 @@ class DsqDirect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/multiprocessio/dsq/releases/download/0.5.0/dsq-darwin-x64-0.5.0.zip"
-      sha256 "972bda671888088c6ab7e173ad169a170d6578f2eeb278c15f941541dbde88ab"
+      url "https://github.com/multiprocessio/dsq/releases/download/0.9.0/dsq-darwin-x64-0.9.0.zip"
+      sha256 "413356214315c90d36dfe9b976f4bedb4b45569090fd2c0e298ed1bfd6dbf220"
     end
   end
 
   on_linux do
-    odie "Use homebrew-core forumla instead."
+    odie "Use homebrew-core formula instead."
   end
 
   conflicts_with "dsq", because: "you should try the version in homebrew-core first"
