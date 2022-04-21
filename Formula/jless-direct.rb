@@ -1,7 +1,11 @@
 class JlessDirect < Formula
   desc "Command-line pager for JSON data"
   homepage "https://jless.io/"
+  url "https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v0.8.0.tar.gz"
+  sha256 "3f1168c9b2432f7f4fa9dd3c31b55e371ef9d6f822dc98a8cdce5318a112bf2d"
   license "MIT"
+
+  depends_on :macos
 
   on_macos do
     if Hardware::CPU.intel?
@@ -11,7 +15,7 @@ class JlessDirect < Formula
   end
 
   on_linux do
-    odie "Use homebrew-core formula instead."
+    opoo "Requires glibc 2.29 or greater. Use homebrew-core formula instead or see https://github.com/PaulJuliusMartinez/jless/issues/74 for more information."
   end
 
   conflicts_with "jless", because: "you should try the version in homebrew-core first"
