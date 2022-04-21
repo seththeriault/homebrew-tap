@@ -1,11 +1,14 @@
 class LibtreeDirect < Formula
   desc "ldd as a tree"
   homepage "https://github.com/haampie/libtree"
-  version "3.1.0"
+  url "https://github.com/haampie/libtree/archive/refs/tags/v3.1.0.tar.gz"
+  sha256 "8057edb2dd77b0acf6ceab6868741993979dccd41fc41a58bde743f11666d781"
   license "MIT"
 
+  depends_on :linux
+
   on_macos do
-    odie "Not available on MacOS. See #{homepage} for more information."
+    opoo "Not available on MacOS. See #{homepage} for more information."
   end
 
   on_linux do
