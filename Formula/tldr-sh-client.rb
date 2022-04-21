@@ -1,9 +1,9 @@
 class TldrShClient < Formula
   desc "A fully-functional POSIX shell client for tldr-pages"
   homepage "https://github.com/raylee/tldr-sh-client"
-  version "2022.02.15"
+  version "2022.04.18"
   url "https://raw.githubusercontent.com/raylee/tldr/master/tldr"
-  sha256 "e01fbab798513a012bf52e196c624577c25c653729fd63f2bebae1c52a20bf82"
+  sha256 "2562fa3b85f029ffa3582b896c176762d97fc5f5b865bc409ddcda20ed0272b1"
   license "MIT"
 
   def install
