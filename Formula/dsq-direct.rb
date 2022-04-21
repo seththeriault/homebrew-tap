@@ -1,13 +1,13 @@
 class DsqDirect < Formula
   desc "CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more"
   homepage "https://github.com/multiprocessio/dsq"
-  version "0.13.0"
+  version "0.15.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/multiprocessio/dsq/releases/download/0.13.0/dsq-darwin-x64-0.13.0.zip"
-      sha256 "b87129863d9f91820ebed51f0549e22b35716be60bb307fddaa5b3ec865bdd6b"
+      url "https://github.com/multiprocessio/dsq/releases/download/0.15.1/dsq-darwin-x64-0.15.1.zip"
+      sha256 "8e3bd2b664ff0f335de34b0fecfc76565c527c54758f63f2eea93ae26ab91828"
     end
   end
 
@@ -23,7 +23,7 @@ class DsqDirect < Formula
 
   test do
     resource("$HOME/userdata.json") do
-      url "https://raw.githubusercontent.com/multiprocessio/dsq/0.10.0/testdata/userdata.json"
+      url "https://raw.githubusercontent.com/multiprocessio/dsq/0.15.1/testdata/userdata.json"
       sha256 "6713173f834d9398271554f8be9f2e431d51cdc58f6804cc3f4f725da28ad73e"
     end
 
