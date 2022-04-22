@@ -3,7 +3,7 @@ class SecretsDirect < Formula
   homepage "https://github.com/sirwart/secrets"
   url "https://github.com/sirwart/secrets/archive/refs/tags/v0.1.2.tar.gz"
   sha256 "ac21742bb8cea7010304fe911d6f40faed5a64f0cb5f3dae9bda1bfe8351c7c7"
-  license "Apache-2.0"
+  license "MIT"
 
   depends_on :macos
 
