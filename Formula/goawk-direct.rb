@@ -3,6 +3,7 @@ class GoawkDirect < Formula
   homepage "https://benhoyt.com/writings/goawk/"
   url "https://github.com/benhoyt/goawk/archive/refs/tags/v1.17.1.tar.gz"
   sha256 "43054fbe53922807d97816be802a39a9485c71369eb74f9ed2c2877dcb4d3629"
+  version "1.17.1"
   license "MIT"
 
   on_macos do
