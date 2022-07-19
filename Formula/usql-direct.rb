@@ -22,8 +22,6 @@ class UsqlDirect < Formula
 
   end
 
-  conflicts_with "usql", because: "you should try the version in homebrew-core first"
-
   def install
     bin.install "#$usql_binary" => "usql"
   end
