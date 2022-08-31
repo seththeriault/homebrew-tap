@@ -19,6 +19,8 @@ class RipsecretsDirect < Formula
     end
   end
 
+  conflicts_with "ripsecrets", because: "you should try the version in homebrew-core first"
+
   def install
     bin.install "ripsecrets"
   end
