@@ -2,7 +2,7 @@ class QdnsDirect < Formula
   desc "A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH."
   homepage "https://github.com/natesales/q"
   version "0.8.2"
-  license GPL-3.0
+  license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
