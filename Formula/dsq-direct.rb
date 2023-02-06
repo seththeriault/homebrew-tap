@@ -5,8 +5,6 @@ class DsqDirect < Formula
   sha256 "02c923f9089399bf66809bedcb3fec27022f11829e0ed2ac9c7ff87f72e85d8d"
   license "Apache-2.0"
 
-  depends_on :macos
-
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/multiprocessio/dsq/releases/download/v0.23.0/dsq-darwin-x64-v0.23.0.zip"
