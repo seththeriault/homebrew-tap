@@ -1,3 +1,4 @@
 {
+  "qdns-direct": "qdig-direct",
   "secrets-direct": "ripsecrets-direct"
 }
