@@ -14,7 +14,6 @@ class DsqDirect < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      opoo "Requires glibc 2.28 or greater. Othwerwise, use homebrew-core formula instead or see #{homepage} for more information."
       url "https://github.com/multiprocessio/dsq/releases/download/v0.23.0/dsq-linux-x64-v0.23.0.zip"
       sha256 "dfae1ecd578a4869d75ba815cbbbf3ef962fee60794cada25f50c144d5acccb4"
     end
