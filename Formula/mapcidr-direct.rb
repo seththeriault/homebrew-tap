@@ -1,21 +1,21 @@
 class MapcidrDirect < Formula
   desc "Subnet/CIDR operation utility"
   homepage "https://projectdiscovery.io"
-  url "https://github.com/projectdiscovery/mapcidr/archive/v1.0.3.tar.gz"
-  sha256 "57684ee0ad18c4e96a2b6c3da88d8b22a2413253ff157b20c595a0a5f554136d"
+  url "https://github.com/projectdiscovery/mapcidr/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "52dcf9181d361c444823e64e1a89a9da0e4a3bd8fdf26e0d8a803589fa935289"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/projectdiscovery/mapcidr/releases/download/v1.0.3/mapcidr_1.0.3_macOS_amd64.tar.gz"
-      sha256 "2411161195d8fa6d8acc797f0164b2b93aab84c7da8b0a09336f3c51267131f6"
+      url "https://github.com/projectdiscovery/mapcidr/releases/download/v1.1.2/mapcidr_1.1.2_macOS_amd64.zip"
+      sha256 "479599d397b4897a68f4ba2023b040673efb6ed75b50a38a309a45296d231363"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/projectdiscovery/mapcidr/releases/download/v1.0.3/mapcidr_1.0.3_linux_amd64.tar.gz"
-      sha256 "7db1d99f22c6d0b178bcff56a81c6fccdc3245f0af5bcdc1e2d1fcb83dfaeaf0"
+      url "https://github.com/projectdiscovery/mapcidr/releases/download/v1.1.2/mapcidr_1.1.2_linux_amd64.zip"
+      sha256 "4c164c12dda1f8941dbce6f8e1f41a17a372d55ec79421d6e48630b6c613d7da"
     end
   end
 
