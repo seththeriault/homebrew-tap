@@ -15,8 +15,8 @@ class UsqlDirect < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/xo/usql/releases/download/v0.14.10/usql-0.14.10-linux-amd64.tar.bz2"
-      sha256 "15190c99804e00bae7574b6de11054fa1f6380856c12feddf67c0e667f8492cc"
+      url "https://github.com/xo/usql/releases/download/v0.14.10/usql_static-0.14.10-linux-amd64.tar.bz2"
+      sha256 "4ad6a6e4c4d057b4feedab85c30317d94551778aa2db02aee600f2bba93b71e2"
       $usql_binary = "usql_static"
     end
 
