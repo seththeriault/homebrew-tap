@@ -1,30 +1,30 @@
 class QdigDirect < Formula
   desc "A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH."
   homepage "https://github.com/natesales/q"
-  version "0.11.3"
+  version "0.12.0"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/natesales/q/releases/download/v0.11.3/q_0.11.3_darwin_arm64.tar.gz:
-      sha256 ""b53d1d50a679a2ea48d3cce003710c0239a734c9fc36a0539cfe953979b031eb
+      url "https://github.com/natesales/q/releases/download/v0.12.0/q_0.12.0_darwin_arm64.tar.gz"
+      sha256 "347a2e0175ef50e47422cd7f3edd1dc7d4904d038b242892558b2d3a79907937"
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/natesales/q/releases/download/v0.11.3/q_0.11.3_darwin_amd64.tar.gz"
-      sha256 "4f41ca5ee44644e5986c79c96ffb1ff87a242b84a3e08b40b7fdecb6fa077bc4"
+      url "https://github.com/natesales/q/releases/download/v0.12.0/q_0.12.0_darwin_amd64.tar.gz"
+      sha256 "66f90d8d2442a47c76979bcf8c335cd976e7fa537a9c5e461207818d271700ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/natesales/q/releases/download/v0.11.3/q_0.11.3_linux_amd64.tar.gz"
-      sha256 "43bc42bd9361445e6b0efd5e6394a158c48bad3a75de98adf736177876d6ebe4"
+      url "https://github.com/natesales/q/releases/download/v0.12.0/q_0.12.0_linux_amd64.tar.gz"
+      sha256 "5dd3564383d46791530b43493ce36d519b5ff0d43c297369024b867684293337"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natesales/q/releases/download/v0.11.3/q_0.11.3_linux_arm64.tar.gz"
-      sha256 "a433c7e47efac64690706466d5070f191a9789ad19c4b7cc74f1dca4d6d96fb0"
+      url "https://github.com/natesales/q/releases/download/v0.12.0/q_0.12.0_linux_arm64.tar.gz"
+      sha256 "a007f3d9bd8dd1d1f0c0fbf928d568db147066440febc8d22a99554ea767248f"
     end
   end
 
