@@ -1,20 +1,20 @@
 class RcloneDirect < Formula
   desc "Rsync for cloud storage"
   homepage "https://rclone.org/"
-  version "1.60.1"
+  version "1.65.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-osx-amd64.zip"
-      sha256 "d4aad882569aff9ce3278da721369d41d831bb57284c4e40efe0730243b4b84a"
+      url "https://github.com/rclone/rclone/releases/download/v1.65.1/rclone-v1.65.1-osx-amd64.zip"
+      sha256 "1508bf7cb951181238f77370466220239404cd475472081c8059eb3d74e668cb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rclone/rclone/releases/download/v1.60.1/rclone-v1.60.1-linux-amd64.zip"
-      sha256 "fd6bc19cc7fadb13538cc109128bf92ef47762a83a3eaf2ab699b03bb2a1fe32"
+      url "https://github.com/rclone/rclone/releases/download/v1.65.1/rclone-v1.65.1-linux-amd64.zip"
+      sha256 "8e325e200b07f05667d65277b96f3c3acd02f54466a3ffbda27a5f4ec5fb8776"
     end
   end
 
