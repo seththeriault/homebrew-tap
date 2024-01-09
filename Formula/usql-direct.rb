@@ -1,13 +1,13 @@
 class UsqlDirect < Formula
   desc "Universal command-line interface for SQL databases"
   homepage "https://github.com/xo/usql"
-  version "0.14.10"
+  version "0.17.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xo/usql/releases/download/v0.14.10/usql-0.14.10-darwin-amd64.tar.bz2"
-      sha256 "d6d6a67e40c0157a43229181aff3ab69b58d37437e3ab1ec503cd98ccf0b9d60"
+      url "https://github.com/xo/usql/releases/download/v0.17.5/usql-0.17.5-darwin-amd64.tar.bz2"
+      sha256 "aad209374ac1e4b700f46679a66701c9f8c54d5cd820dcd76308a2cc11bda14f"
       $usql_binary = "usql"
     end
 
@@ -15,8 +15,8 @@ class UsqlDirect < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/xo/usql/releases/download/v0.14.10/usql_static-0.14.10-linux-amd64.tar.bz2"
-      sha256 "4ad6a6e4c4d057b4feedab85c30317d94551778aa2db02aee600f2bba93b71e2"
+      url "https://github.com/xo/usql/releases/download/v0.17.5/usql_static-0.17.5-linux-amd64.tar.bz2"
+      sha256 "69c0d8661a80297d875fb1f2f5b9da9291515eb0e8b108c8b4eb3f4634bba645"
       $usql_binary = "usql_static"
     end
 
