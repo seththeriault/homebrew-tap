@@ -2,8 +2,8 @@ class YtDlpDirect< Formula
 
   desc "A youtube-dl fork with additional features and fixes"
   homepage "https://github.com/yt-dlp/yt-dlp"
-  url "https://github.com/yt-dlp/yt-dlp/releases/download/2023.10.13/yt-dlp"
-  sha256 "be5cfb6be8930e1a5f427533ec32f2a481276b3da7b249d0150ce2b740ccf1ce"
+  url "https://github.com/yt-dlp/yt-dlp/releases/download/2023.12.30/yt-dlp"
+  sha256 "1965bf8dcf181a8e6adb99c0ec4cdaaae5e2d01ba1f5198f68535305d5ae94b2"
   license "Unlicense"
 
   def install
