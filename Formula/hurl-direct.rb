@@ -5,15 +5,15 @@ class HurlDirect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Orange-OpenSource/hurl/releases/download/4.1.0/hurl-4.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4d4ce802cd331e0003306f1e14935ea31f8b548866e677ce1ebf3f5e9d480bc4"
+      url "https://github.com/Orange-OpenSource/hurl/releases/download/4.2.0/hurl-4.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "985945db39031a2b2c0fae2a7bbe046478e32ff719d2f55aba95806ed33c209c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Orange-OpenSource/hurl/releases/download/4.1.0/hurl-4.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9528379f817d118c933afb555d62dd83994503235a0a14fda2dfa5995628ded0"
+      url "https://github.com/Orange-OpenSource/hurl/releases/download/4.2.0/hurl-4.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fc9789905947c3960b273fb6b8b3548fd35761d9bfcc598feeb3dc5aece625cc"
     end
   end
 
