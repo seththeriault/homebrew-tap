@@ -1,22 +1,22 @@
 class GoawkDirect < Formula
   desc "POSIX-compliant AWK interpreter written in Go"
   homepage "https://benhoyt.com/writings/goawk/"
-  url "https://github.com/benhoyt/goawk/archive/refs/tags/v1.20.0.tar.gz"
-  sha256 "c24ef4a9b1c0b416c1aeb786368b36736617c60cfd1f4e871798f5abb2a18e0b"
-  version "1.20.0"
+  url "https://github.com/benhoyt/goawk/archive/refs/tags/v1.27.0.tar.gz"
+  sha256 "f39d5b3ff50f3c16cbfaaa40eb01ec045092afa66988e9728661c65c0e5d6a93"
+  version "1.27.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benhoyt/goawk/releases/download/v1.20.0/goawk_v1.20.0_darwin_amd64.tar.gz"
-      sha256 "deda1cb4064d30a195753da7e77b68f826e535f57e7d0ba7eeddab24de4f185a"
+      url "https://github.com/benhoyt/goawk/releases/download/v1.27.0/goawk_v1.27.0_darwin_amd64.tar.gz"
+      sha256 "b3137b7304d196e7aede85eead3abef92cdd7ae93e05bf2b240a3b898f12e383"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/benhoyt/goawk/releases/download/v1.20.0/goawk_v1.20.0_linux_amd64.tar.gz"
-      sha256 "f9fbf5d01dca42267d8cf0245468068a888e2aeec8cf63a71969bf05c1f391a8"
+      url "https://github.com/benhoyt/goawk/releases/download/v1.27.0/goawk_v1.27.0_linux_amd64.tar.gz"
+      sha256 "70cfeebdd53d81a436fd4313b843e344be87ab00310519644ad9c67e87d8d29b"
     end
   end
 
