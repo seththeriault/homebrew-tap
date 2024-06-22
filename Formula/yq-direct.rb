@@ -1,13 +1,13 @@
 class YqDirect < Formula
   desc "Process YAML documents from the CLI"
   homepage "https://github.com/mikefarah/yq"
-  version "4.34.2"
+  version "4.44.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mikefarah/yq/releases/download/v4.34.2/yq_darwin_amd64.tar.gz"
-      sha256 "a87a21cb6969081baaf59628e5fcb90173a1ce173f86b010d48cdba465116ae9"
+      url "https://github.com/mikefarah/yq/releases/download/v4.44.2/yq_darwin_amd64.tar.gz"
+      sha256 "7e02afc024868ab298cb44fe9b1cf56ffb2e083cd5a426cc6616c08c1aad3e7a"
       $yq_binary = "yq_darwin_amd64"
     end
 
@@ -15,8 +15,8 @@ class YqDirect < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/mikefarah/yq/releases/download/v4.34.2/yq_linux_amd64.tar.gz"
-      sha256 "4fbd03955630ef013def873cf00c03c5a42b6085eea4e12f2b9dc5a296826112"
+      url "https://github.com/mikefarah/yq/releases/download/v4.44.2/yq_linux_amd64.tar.gz"
+      sha256 "e4c2570249e3993e33ffa44e592b5eee8545bd807bfbeb596c2986d86cb6c85c"
       $yq_binary = "yq_linux_amd64"
     end
 
