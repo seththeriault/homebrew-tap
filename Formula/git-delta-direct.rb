@@ -5,15 +5,15 @@ class GitDeltaDirect < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dandavison/delta/releases/download/0.12.1/delta-0.12.1-x86_64-apple-darwin.tar.gz"
-      sha256 "9d853c4a11f75b8b604cddf74df12d481d64251eb775d139c53f228df2f5ace3"
+      url "https://github.com/dandavison/delta/releases/download/0.17.0/delta-0.17.0-x86_64-apple-darwin.tar.gz"
+      sha256 "e8b8107aa0725b7a0deee556c05bb655846f0f49bb8a8ec44cb1f78d4a3274fe"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/dandavison/delta/releases/download/0.12.1/delta-0.12.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8b6e8d735850fc3a14c10d8139f2ab19fa6fc17c99c905438d3713a76e3ab079"
+      url "https://github.com/dandavison/delta/releases/download/0.17.0/delta-0.17.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "95a9c63ff0db00b25ddcbb9cda9c7f89d4cc5fe1542dbd68b42d3a7441acf6e8"
     end
   end
 
