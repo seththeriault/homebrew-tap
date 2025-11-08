@@ -1,20 +1,26 @@
 class DifftasticDirect < Formula
   desc "Diff that understands syntax"
   homepage "https://github.com/Wilfred/difftastic"
-  version "0.58.0"
+  version "0.65.0"
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url "https://github.com/Wilfred/difftastic/releases/download/0.65.0/difft-aarch64-apple-darwin.tar.gz"
+      sha256 "b5d565f9586519f7e91799c6e3752b7cacf6110dd855b4cf019816e63c7c7f5f"
+    end
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Wilfred/difftastic/releases/download/0.58.0/difft-x86_64-apple-darwin.tar.gz"
-      sha256 "8047dd1ba368085c972f2ba6622b5192c0ad148c166a9ca78eefdaa57855c418"
+      url "https://github.com/Wilfred/difftastic/releases/download/0.65.0/difft-x86_64-apple-darwin.tar.gz"
+      sha256 "69cf21cb0629c63dada7229f6bfe7e91a809335299b25ed14abeb1080547c692"
     end
 
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Wilfred/difftastic/releases/download/0.58.0/difft-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b366b6f46af9c2214b8ab405f8495cd630cc9148518383f5d0eb7df29f770b56"
+      url "https://github.com/Wilfred/difftastic/releases/download/0.65.0/difft-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7196d3fb8c0c24afcc396085c42c74fcf4e4da1e63e27f5b3cfcaef4b72a844f"
     end
 
   end
