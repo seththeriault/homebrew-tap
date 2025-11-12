@@ -9,7 +9,6 @@ class DoxxDirect < Formula
       sha256 "4997fb8e9528c77c994f3beded4ed7e1cfbc9878549ee7a3d061abd0880bfd16"
     end
 
-  on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bgreenwell/doxx/releases/download/v0.1.2/doxx-macos-x86_64.tar.gz"
       sha256 "577ec234f97321dec27a53a5e45324887fce877d64e973f6855ec0642478f162"
