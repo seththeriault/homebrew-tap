@@ -9,7 +9,6 @@ class DifftasticDirect < Formula
       sha256 "b5d565f9586519f7e91799c6e3752b7cacf6110dd855b4cf019816e63c7c7f5f"
     end
 
-  on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Wilfred/difftastic/releases/download/0.65.0/difft-x86_64-apple-darwin.tar.gz"
       sha256 "69cf21cb0629c63dada7229f6bfe7e91a809335299b25ed14abeb1080547c692"
